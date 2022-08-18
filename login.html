@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="Login.css">
     
     <title>Document</title>
     
 </head>
 <body>
     <div>
+        <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
       
         <div class="container">
           <label for="uname"><b>Email</b></label>
@@ -19,8 +22,7 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" id="psw" required>
       
-        <button id="login" type="submit">Login</button>
-           
+          <button id="login" type="submit">Login</button>
           <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
           </label>
@@ -97,6 +99,7 @@ signInWithEmailAndPassword(auth, email, password)
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
+    window.location.replace("menu.html");
     const uid = user.uid;
     // ...
   } else {
