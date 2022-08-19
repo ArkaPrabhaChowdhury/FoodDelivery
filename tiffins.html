@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a>Sparks</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="menu.html">Cart</a>
+          </li>
+          
+         
+          <li>
+            <a href="land.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="container">
+    <img src="Spark Logo Black.png">
+    <div class="categories">
+      <a href="menu.html">All Items</a>
+      <a href="snacks.html">Snacks</a>
+      <a href="meals.html">Meals</a>
+      <a href="specialatspark.html">Special at Spark</a>
+      <a href="todayspecial.html">Today's Special</a>
+      <a href="bestseller.html">Best Seller</a>
+  </div>
+  <center><h2>Tiffins</h2></center>
+    <div id="alerts"></div>
+    <div class="productcont">
+      <div class="product">
+        <h3 class="productname">Idli</h3>
+        <div class="img">
+          <img src="idli.jpg" alt="Mango Pickle" width="150" height="150" />
+        </div>
+        <p>Idli or idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods in Eastern and Southern India and in Sri Lanka. </p>
+        <p class="price">Rs. 40</p>
+        <a class="addtocart" href="#popup1">Customize Your Order</a>
+      </div>
+      <div class="product">
+        <h3 class="productname">Dosa</h3>
+        <div class="img">
+          <img src="dosa.jpg" alt="Murukulu" width="150" height="150" />
+        </div>
+        <p> A dosa is a thin batter-based pancake originating from South India, made from a fermented batter predominantly consisting of lentils and rice.  </p>
+        <p class="price">Rs. 50</p>
+        <a class="addtocart" href="#popup1">Customize Your Order</a>
+      </div>
+      <div class="product">
+        <h3 class="productname">Wada</h3>
+        <div class="img">
+          <img src="wada.jpg" alt="Kichidi" width="150" height="150" />
+        </div>
+        <p>Vada is a category of savoury fried snacks native to South India. Vadas can be described variously as fritters, cutlets, doughnuts, or dumplings.</p>
+        <p class="price">Rs. 30</p>
+        <a class="addtocart" href="#popup1">Customize Your Order</a>
+      </div>
+    </div>
+    <div class="productcont">
+      <div class="product">
+        <h3 class="productname">Poori</h3>
+        <div class="img">
+          <img src="puri.jpeg" alt="Lemon rice" width="150" height="150" />
+        </div>
+        <p>Puri (sometimes spelled as poori) is a deep-fried bread made from unleavened whole-wheat flour that originated in the Indian subcontinent.  </p>
+        <p class="price">Rs. 40</p>
+        <a class="addtocart" href="#popup1">Customize Your Order</a>
+      </div>
+      <div class="product">
+        <h3 class="productname">Bonda</h3>
+        <div class="img">
+          <img src="bonda.jpg" alt="Aloo Parata" width="150" height="150" />
+        </div>
+        <p> Bonda is a deep-fried South Indian potato snack that has various sweet and savory versions in different regions.  </p>
+        <p class="price">Rs. 30</p>
+        <a class="addtocart" href="#popup1">Customize Your Order</a>
+      </div>
+
+    </div>
+    <div class="cart-container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+        </thead>
+        <tbody id="carttable">
+        </tbody>
+      </table>
+      <hr>
+      <table id="carttotals">
+        <tr>
+          <td><strong>Items</strong></td>
+          <td><strong>Total</strong></td>
+        </tr>
+        <tr>
+          <td>x <span id="itemsquantity">0</span></td>
+
+          <td>Rs. <span id="total">0</span></td>
+        </tr>
+      </table>
+      <div class="cart-buttons">
+        <button id="emptycart">Empty Cart</button>
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K74yUZFFCf0ihy"
+            async> </script>
+        </form>
+      </div>
+    </div>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Customize Your Order</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <!-- Content Starts from here -->
+          <div class="questions">
+            <div class="spice">
+                <div class="q">
+                    Which Spice Level would you prefer?
+                </div>
+                <div class="options">
+                    <select name="" id="">
+                        <option value="select">--Please Select Spice Level--</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="inst">
+                <div class="q">
+                    Additional Instructions:
+                </div>
+    
+                <div class="input">
+                    <textarea placeholder="Instructions" cols="40" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <div class="cuttlery">
+                <div class="q">
+                    Do you want cuttlery?
+                </div>
+    
+                <div>
+                    <input type="radio" name="question0" value="A">Yes<br>
+                    <input type="radio" name="question0" value="A">No<br>
+                </div>
+            </div>
+
+
+            <div class="aitem">
+              <a class="button1" href="">Add to Cart</a>
+            </div>
+    
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

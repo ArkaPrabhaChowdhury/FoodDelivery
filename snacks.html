@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a>Sparks</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="menu.html">Cart</a>
+          </li>
+          
+         
+          <li>
+            <a href="land.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="container">
+    <img src="Spark Logo Black.png">
+    <div class="categories">
+      <a href="menu.html">All Items</a>
+      <a href="tiffins.html">Tiffins</a>
+      <a href="meals.html">Meals</a>
+      <a href="specialatspark.html">Special at Spark</a>
+      <a href="todayspecial.html">Today's Special</a>
+      <a href="bestseller.html">Best Seller</a>
+  </div>
+  <center><h2>Snacks</h2></center>
+    <div id="alerts"></div>
+    <div class="productcont">
+        <div class="product">
+            <h3 class="productname">Samosachutney</h3>
+            <div class="img">
+              <img src="Samosachutney.jpg" alt="Mango Pickle" width="150" height="150" />
+            </div>
+            <p>The samosas are a fried or baked pastry with a savory filling, such as spiced potatoes, onions, peas, lentils, and minced meat (lamb, beef or chicken). </p>
+            <p class="price">Rs. 20</p>
+            <a class="addtocart" href="#popup1">Customize your Order</a>
+          </div>
+          <div class="product">
+            <h3 class="productname">Noodles</h3>
+            <div class="img">
+              <img src="noodles.jpg" alt="Murukulu" width="150" height="150" />
+            </div>
+            <p> Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings.</p>
+            <p class="price">Rs. 50</p>
+            <a class="addtocart" href="#popup1">Customize your Order</a>
+          </div>
+          <div class="product">
+            <h3 class="productname">Pakodi</h3>
+            <div class="img">
+              <img src="pakodi.jpg" alt="Kichidi" width="150" height="150" />
+            </div>
+            <p>A gram flour fritter is known in Tamil Nadu and Sri Lanka as Pakoda or bajji, Gujarat as bhajia, in Maharashtra as bhaji, in Andhra Pradesh/Telangana and Karnataka as bajji or "Pakodi". </p>
+            <p class="price">Rs. 40</p>
+            <a class="addtocart" href="#popup1">Customize your Order</a>
+          </div>
+    </div>
+    <div class="productcont">
+        <div class="product">
+            <h3 class="productname">Chips</h3>
+            <div class="img">
+              <img src="chips.jpg" alt="Mango Pickle" width="150" height="150" />
+            </div>
+            <p>A potato chip is a thin slice of potato that has been either deep fried, baked, or air fried until crunchy. They are commonly served as a snack. </p>
+            <p class="price">Rs. 10</p>
+            <a class="addtocart" href="#popup1">Customize your Order</a>
+          </div>
+          <div class="product">
+            <h3 class="productname">Biscuits</h3>
+            <div class="img">
+              <img src="biscuits.jpg" alt="Murukulu" width="150" height="150" />
+            </div>
+            <p>A biscuit is a flour-based baked and shaped food product. In most countries biscuits are typically hard, flat, and unleavened. </p>
+            <p class="price">Rs. 10</p>
+            <a class="addtocart" href="#popup1">Customize your Order</a>
+          </div>
+    </div>
+    <div class="cart-container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+        </thead>
+        <tbody id="carttable">
+        </tbody>
+      </table>
+      <hr>
+      <table id="carttotals">
+        <tr>
+          <td><strong>Items</strong></td>
+          <td><strong>Total</strong></td>
+        </tr>
+        <tr>
+          <td>x <span id="itemsquantity">0</span></td>
+
+          <td>Rs. <span id="total">0</span></td>
+        </tr>
+      </table>
+      <div class="cart-buttons">
+        <button id="emptycart">Empty Cart</button>
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K74yUZFFCf0ihy"
+            async> </script>
+        </form>
+      </div>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Customize Your Order</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <!-- Content Starts from here -->
+            <div class="questions">
+              <div class="spice">
+                  <div class="q">
+                      Which Spice Level would you prefer?
+                  </div>
+                  <div class="options">
+                      <select name="" id="">
+                          <option value="select">--Please Select Spice Level--</option>
+                          <option value="low">Low</option>
+                          <option value="medium">Medium</option>
+                          <option value="high">High</option>
+                      </select>
+                  </div>
+              </div>
+      
+              <div class="inst">
+                  <div class="q">
+                      Additional Instructions:
+                  </div>
+      
+                  <div class="input">
+                      <textarea placeholder="Instructions" cols="40" rows="10"></textarea>
+                  </div>
+              </div>
+      
+              <div class="cuttlery">
+                  <div class="q">
+                      Do you want cuttlery?
+                  </div>
+      
+                  <div>
+                      <input type="radio" name="question0" value="A">Yes<br>
+                      <input type="radio" name="question0" value="A">No<br>
+                  </div>
+              </div>
+  
+  
+              <div class="aitem">
+                <a class="button1" href="">Add to Cart</a>
+              </div>
+      
+          </div>
+          </div>
+        </div>
+      </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

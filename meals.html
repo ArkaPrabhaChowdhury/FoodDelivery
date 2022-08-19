@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a>Sparks</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="menu.html">Cart</a>
+          </li>
+          
+         
+          <li>
+            <a href="land.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="container">
+    <img src="Spark Logo Black.png">
+    <div class="categories">
+      <a href="menu.html">All Items</a>
+      <a href="snacks.html">Snacks</a>
+      <a href="tiffins.html">Tiffins</a>
+      <a href="specialatspark.html">Special at Spark</a>
+      <a href="todayspecial.html">Today's Special</a>
+      <a href="bestseller.html">Best Seller</a>
+  </div>
+  <center><h2>Meals</h2></center>
+    <div id="alerts"></div>
+    <div class="productcont">
+        <div class="product">
+            <h3 class="productname">Chicken Biryani</h3>
+            <div class="img">
+              <img src="biryani.jpg" alt="Mango Pickle" width="150" height="150" />
+            </div>
+            <p>Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together.</p>
+            <p class="price">Rs. 240</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+          </div>
+          <div class="productcont">
+            <div class="product">
+              <h3 class="productname">Veg Biryani</h3>
+              <div class="img">
+                <img src="vegbiryani.jpg" alt="Murukulu" width="150" height="150" />
+              </div>
+              <p> Vegetable biryani is an aromatic rice dish made with basmati rice, mix veggies, herbs & biryani spices. </p>
+              <p class="price">Rs. 180</p>
+              <a class="addtocart" href="#popup1">Customize Your Order</a>
+            </div>
+            <div class="product">
+                <h3 class="productname">Dal Rice</h3>
+                <div class="img">
+                  <img src="dalrice.jpg" alt="Kichidi" width="150" height="150" />
+                </div>
+                <p>It consists of steamed rice and a cooked lentil or other pulses stew called dal. It is a staple food in these countries.</p>
+                <p class="price">Rs. 120</p>
+                <a class="addtocart" href="#popup1">Customize Your Order</a>
+            </div>
+          </div>
+    </div>
+    <div class="productcont">
+        <div class="product">
+            <h3 class="productname">Lemon Rice</h3>
+            <div class="img">
+              <img src="lemon rice.png" alt="Lemon rice" width="150" height="150" />
+            </div>
+            <p>Lemon rice is one of the most common dishes from South India, where
+              it also goes by the name chitranna. </p>
+            <p class="price">Rs. 120</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+          </div>
+          <div class="product">
+            <h3 class="productname">Aloo Paratha</h3>
+            <div class="img">
+              <img src="Aloo Parata.png" alt="Aloo Parata" width="150" height="150" />
+            </div>
+            <p> Aloo paratha is a whole wheat flatbread which is stuffed with spicy
+              mashed potatoes. </p>
+            <p class="price">Rs. 70</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+          </div>
+      <div class="productcont">
+          <div class="product">
+            <h3 class="productname">Tandoori Roti</h3>
+            <div class="img">
+              <img src="tandoriroti.jpg" alt="Lemon rice" width="150" height="150" />
+            </div>
+            <p>This roti is best enjoyed with creamy dal makhani or curries like butter paneer and paneer tikka masala.  </p>
+            <p class="price">Rs. 80</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+          </div>
+      </div>
+    </div>
+    <div class="productcont">
+        <div class="product">
+            <h3 class="productname">Chana Masala</h3>
+            <div class="img">
+              <img src="chanamasala.jpg" alt="Lemon rice" width="150" height="150" />
+            </div>
+            <p>Chana masala is a North Indian curried dish made with white chickpeas, onions, tomatoes, spices and herbs.</p>
+            <p class="price">Rs. 400</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+        </div>
+        <div class="product">
+            <h3 class="productname">Mutton Biryani</h3>
+            <div class="img">
+              <img src="muttonbiryani.jpg" alt="Aloo Parata" width="150" height="150" />
+            </div>
+            <p> Mutton biryani is a popular Indian rice dish made using long grain basmati rice layered with a spicy mutton (goat meat) layer. </p>
+            <p class="price">Rs. 350</p>
+            <a class="addtocart" href="#popup1">Customize Your Order</a>
+        </div>
+    </div>
+    <div class="cart-container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+        </thead>
+        <tbody id="carttable">
+        </tbody>
+      </table>
+      <hr>
+      <table id="carttotals">
+        <tr>
+          <td><strong>Items</strong></td>
+          <td><strong>Total</strong></td>
+        </tr>
+        <tr>
+          <td>x <span id="itemsquantity">0</span></td>
+
+          <td>Rs. <span id="total">0</span></td>
+        </tr>
+      </table>
+      <div class="cart-buttons">
+        <button id="emptycart">Empty Cart</button>
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_K74yUZFFCf0ihy"
+            async> </script>
+        </form>
+      </div>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Customize Your Order</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <!-- Content Starts from here -->
+            <div class="questions">
+              <div class="spice">
+                  <div class="q">
+                      Which Spice Level would you prefer?
+                  </div>
+                  <div class="options">
+                      <select name="" id="">
+                          <option value="select">--Please Select Spice Level--</option>
+                          <option value="low">Low</option>
+                          <option value="medium">Medium</option>
+                          <option value="high">High</option>
+                      </select>
+                  </div>
+              </div>
+      
+              <div class="inst">
+                  <div class="q">
+                      Additional Instructions:
+                  </div>
+      
+                  <div class="input">
+                      <textarea placeholder="Instructions" cols="40" rows="10"></textarea>
+                  </div>
+              </div>
+      
+              <div class="cuttlery">
+                  <div class="q">
+                      Do you want cuttlery?
+                  </div>
+      
+                  <div>
+                      <input type="radio" name="question0" value="A">Yes<br>
+                      <input type="radio" name="question0" value="A">No<br>
+                  </div>
+              </div>
+  
+  
+              <div class="aitem">
+                <a class="button1" href="">Add to Cart</a>
+              </div>
+      
+          </div>
+          </div>
+        </div>
+      </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>
