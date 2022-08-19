@@ -11,7 +11,7 @@ body {
   display: grid;
   place-items: center;
   font-family: sans-serif;
-  background-image: linear-gradient(to right top, #FF4B31, #FD5C37, #FE693C, #FF7B41, #FE9045, #FEA549, #FFBB4E);
+  background-image: linear-gradient(to right top, #FF4B31, #FD5C37, #FE693C, #FF7B41, #FE9045, #FEA549);
   color: rgb(225,225,255);
 }
 
